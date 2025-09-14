@@ -1,2 +1,78 @@
-# -Stock-Market-Trend-Prediction-Visualization
-Stock Market Trend Prediction &amp; Visualization uses deep learning (LSTM) and financial indicators to forecast stock prices from CSV data. It features an interactive dashboard with real-time charts and actionable trading signals for smarter investment decisions.
+# Stock Market Trend Prediction & Visualization
+
+End-to-end project for predicting and visualizing stock market trends using LSTM neural networks, financial indicators, and interactive Plotly dashboards.
+
+## Features
+
+- **Data Processing:** Computes SMA, EMA, RSI indicators from raw stock CSVs.
+- **Sequential Prediction:** Trains an LSTM (TensorFlow) model for time series forecasting.
+- **Interactive Visualization:** React frontend displays actual vs. predicted prices, plus trading signals.
+- **Actionable Insights:** "Buy", "Sell", "Hold" signals based on model predictions.
+
+## Project Structure
+
+```
+stock-market-predictor/
+├── backend/
+├── frontend/
+├── docker-compose.yml
+└── README.md
+```
+
+## Setup & Usage
+
+### 1. Clone the repo
+```sh
+git clone https://github.com/akriti-jha/stock-market-predictor.git
+cd stock-market-predictor
+```
+
+### 2. Prepare data
+Use CSV files with columns: `Date, Open, High, Low, Close, Volume`.
+
+### 3. Run with Docker Compose
+```sh
+docker-compose up --build
+```
+
+- **Backend:** FastAPI, available at `http://localhost:8000`
+- **Frontend:** React app, available at `http://localhost:3000`
+
+### 4. Usage Steps
+- Upload your stock CSV file in the frontend.
+- Click "Train Model" (wait for success alert).
+- Click "Predict & Visualize" to see results.
+
+### 5. Manual Backend/Frontend Setup
+
+#### Backend
+```sh
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+#### Frontend
+```sh
+cd frontend
+npm install
+npm start
+```
+
+## Example
+
+Upload a CSV and get:
+
+- Interactive chart: Actual vs. Predicted prices
+- Table of trading signals (Buy/Sell/Hold)
+
+---
+
+## Customization
+
+- Add more indicators in `data_processing.py` as needed.
+- Adjust LSTM layers in `model.py` for experimentation.
+
+## License
+
+MIT
