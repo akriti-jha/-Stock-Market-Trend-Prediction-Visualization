@@ -9,6 +9,24 @@ End-to-end project for predicting and visualizing stock market trends using LSTM
 - **Interactive Visualization:** React frontend displays actual vs. predicted prices, plus trading signals.
 - **Actionable Insights:** "Buy", "Sell", "Hold" signals based on model predictions.
 
+
+## 🖼️ Dashboard Preview
+
+Here are some screenshots of the dashboard UI:
+
+### Stock Search & Watchlist
+![Stock Search & Watchlist](images/dashboard-1.png)
+
+### Stock Details, Chart, RSI, MACD
+![Stock Details, Chart, RSI, MACD](images/dashboard-2.png)
+
+### Indicators, Moving Averages & Trading Signals
+![Indicators, Moving Averages & Trading Signals](images/dashboard-3.png)
+
+### Full Dashboard View
+![Full Dashboard](images/dashboard-4.png)
+
+
 ## Project Structure
 
 ```
